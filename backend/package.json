@@ -5,7 +5,7 @@
   "author": "Wes Bos",
   "license": "MIT",
   "scripts": {
-    "dev": "keystone-next",
+    "dev": "cross-env NODE_ENV=development DISABLE_LOGGING=true nodemon --exec keystone-next",
     "seed-data": "keystone-next --seed-data"
   },
   "eslintConfig": {
@@ -54,6 +54,7 @@
     "@typescript-eslint/eslint-plugin": "^4.9.0",
     "@typescript-eslint/parser": "^4.9.0",
     "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.3",
     "eslint": "^7.14.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-typescript": "^12.0.0",
@@ -65,6 +66,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "nodemon": "^2.0.7",
     "prettier": "^2.2.1",
     "typescript": "^4.1.2"
   },
